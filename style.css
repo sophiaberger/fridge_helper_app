@@ -3,9 +3,35 @@
     box-sizing: border-box;
 }
 
-h1 {
-text-align: center;
+div {
 	font-family: 'futura';
+	text-align: center;
+	display: block;
+	margin-left: auto;
+    margin-right: auto;
+    width: 40vw;
+	
+}
+
+p {
+font-family: 'futura';
+	text-align: center;
+	display: block;
+	margin-left: auto;
+    margin-right: auto;
+    width: 40vw;
+}
+
+
+h1 {
+	font-family: 'futura';
+	text-align: center;
+	display: block;
+	margin-left: auto;
+    margin-right: auto;
+    width: 40vw;
+	
+	color: white;
 	background-color: #24538f; /* same as menu color */
 }
 
@@ -93,7 +119,7 @@ ul li.checked::before {
 
 /* Style the input */
 input {
-    border: none;
+    border: .5vw solid;
     width: 75%;
     padding: 10px;
     float: left;

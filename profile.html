@@ -1,6 +1,8 @@
 <!-- Add icon library -->
 <!DOCTYPE html>
 <html>
+ <link href="style.css" type="text/css" rel="stylesheet">
+ 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <head>
     <meta charset="UTF-8">
@@ -20,14 +22,22 @@
   <a href="#"><i class="fa fa-facebook"></i></a> 
 </div>
 
-<div class="recent"
+<div class="recent">
+
+
+
   <h2>Recently Added Foods</h2>
-	<ul>
+	<ul id = "myUL">
 	  <li>Coffee</li>
 	  <li>Tea</li>
 	  <li>Milk</li>
 	</ul>  
+	
+	<button onclick="sortListDir()">Sort</button>
 </div>
+
+
   
+  <script src = "main.js"></script>
   </body>
 </html>

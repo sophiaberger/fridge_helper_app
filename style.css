@@ -119,10 +119,10 @@ ul li.checked::before {
 
 /* Style the input */
 input {
-    border: .5vw solid;
+    border: .5vh solid;
     width: 75%;
     padding: 10px;
-    float: left;
+    
     font-size: 16px;
 }
 

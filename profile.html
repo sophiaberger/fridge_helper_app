@@ -14,19 +14,30 @@
   <img src="img.jpg" alt="John" style="width:100%">
   <h1>John Doe</h1>
   <p class="title">CEO & Founder, Example</p>
-  <p>Diet Restrictions</p>
-  <p>Harvard University</p>
-  <a href="#"><i class="fa fa-dribbble"></i></a> 
-  <a href="#"><i class="fa fa-twitter"></i></a> 
-  <a href="#"><i class="fa fa-linkedin"></i></a> 
-  <a href="#"><i class="fa fa-facebook"></i></a> 
+</div>
+
+<div id="diet"> 
+	<h3>Diet Type</h3>
+	<form id = "diet_choices">
+	  <input type="radio" value="no" checked> No Dietary Restrictions<br>
+	  <input type="radio" value="veg"> Vegetarian<br>
+	  <input type="radio" value="vegan"> Vegan<br>
+	  <input type="radio" value="pesc"> Pescetarian<br>
+	  <input type="radio" value="paleo"> Paleo<br>
+	  <input type="radio" value="keto"> Ketogenic<br>
+	</form> 
+</div>
+
+<div id="allergy"> 
+	<input type="checkbox"><span>Lactose</span>
+	<input type="checkbox"><span>Gluten</span>
+	<input type="checkbox"><span>Tree Nuts</span>
+	<input type="checkbox"><span>Peanuts</span>
+	<input type="checkbox"><span>Shellfish</span>			
 </div>
 
 <div class="recent">
-
-
-
-  <h2>Recently Added Foods</h2>
+  <h3>Recently Added Foods</h3>
 	<ul id = "myUL">
 	  <li>Coffee</li>
 	  <li>Tea</li>
@@ -36,6 +47,7 @@
 	<button onclick="sortListDir()">Sort</button>
 </div>
 
+<a href="myfood.html">My Foods</A>
 
   
   <script src = "main.js"></script>

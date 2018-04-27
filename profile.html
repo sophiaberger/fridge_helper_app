@@ -10,30 +10,37 @@
   </head>
   <body>
 
-<div class="profile" class="header"
-  <img src="img.jpg" alt="John" style="width:100%">
-  <h1>John Doe</h1>
-  <p class="title">CEO & Founder, Example</p>
+<div class="profile" class="header">
+	<h1>John Doe</h1>
+	<p>Sample Bio</p>
+	<img src = "person.jpeg" style="width:100px;height:100px;">
 </div>
 
-<div id="diet"> 
+<div id="diettype"> 
 	<h3>Diet Type</h3>
-	<form id = "diet_choices">
-	  <input type="radio" value="no" checked> No Dietary Restrictions<br>
-	  <input type="radio" value="veg"> Vegetarian<br>
-	  <input type="radio" value="vegan"> Vegan<br>
-	  <input type="radio" value="pesc"> Pescetarian<br>
-	  <input type="radio" value="paleo"> Paleo<br>
-	  <input type="radio" value="keto"> Ketogenic<br>
-	</form> 
+	<div class="container">
+		<form id = "diet_choices">
+  			<input type="radio" name="diet" value="veg" checked> Vegetarian<br>
+  			<input type="radio" name="diet" value="vegan"> Vegan<br>
+  			<input type="radio" name="diet" value="pesc"> Pescetarian<br>  
+  			<input type="radio" name="diet" value="paleo"> Paleo<br>  
+  			<input type="radio" name="diet" value="none"> None  
+		</form> 
+	</div>
 </div>
 
 <div id="allergy"> 
-	<input type="checkbox"><span>Lactose</span>
-	<input type="checkbox"><span>Gluten</span>
-	<input type="checkbox"><span>Tree Nuts</span>
-	<input type="checkbox"><span>Peanuts</span>
-	<input type="checkbox"><span>Shellfish</span>			
+<h3>Diet Type</h3>
+
+<div class="container">
+	<form id = "allergies">
+		<input type="checkbox"><span>Lactose</span>
+		<input type="checkbox"><span>Gluten</span>
+		<input type="checkbox"><span>Tree Nuts</span>
+		<input type="checkbox"><span>Peanuts</span>
+		<input type="checkbox"><span>Shellfish</span>	
+	</form>		
+</div>
 </div>
 
 <div class="recent">

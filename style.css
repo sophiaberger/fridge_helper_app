@@ -20,7 +20,6 @@ font-family: 'futura';
     width: 40vw;
 }
 
-
 h1 {
 	font-family: 'futura';
 	text-align: center;
@@ -31,6 +30,30 @@ h1 {
 	
 	color: white;
 	background-color: #24538f; /* same as menu color */
+}
+
+/* styling for profile.html */
+
+#diettype {
+	text-align: left;
+	padding-left: 5px;
+}
+#diet_choices {
+    margin: 8px 0;
+    width: 17%;
+    padding-left: 10px;
+    text-align: left;
+    white-space: nowrap;
+}
+.container {
+    width: 10%;
+    padding-left: 5px;
+}
+
+
+#allergy {
+	text-align: right;
+	width: 10%;
 }
 
 /* Remove margins and padding from the list */
@@ -103,9 +126,10 @@ ul li.checked::before {
 /* Style the header */
 .header {
     background-color: #d3e2f1; /* light blue bg */
-    padding: 30px 40px;
+    padding: 40px 40px;
     color: white;
     text-align: center;
+
 }
 
 /* Clear floats after the header */
@@ -118,25 +142,27 @@ ul li.checked::before {
 /* Style the input */
 input {
     border: .25vh solid;
-    width: 75%;
+    width: 100%;
     padding: 10px;
-    
     font-size: 16px;
+    margin-top: 5px;
 }
 
 /* Style the "Add" button */
 .addBtn {
 	border: .25vh solid;
     padding: 10px;
-    width: 25%;
+    width: 10%;
     background: #d9d9d9;
     color: #555;
     font-family: 'verdana';
-    float: left;
+    float: center;
     text-align: center;
     font-size: 16px;
     cursor: pointer;
     transition: 0.3s;
+    display: inline-block;
+    margin-top: 10px;
 }
 
 .addBtn:hover {

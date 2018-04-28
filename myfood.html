@@ -4,12 +4,24 @@
 
 </head>
 <body>
+
+
+
+<div class="topnav" id="myTopnav">
+  <a href="startpage.html">Fridge Helper<a>
+  <a href="profile.html">My Profile</a>
+  <a href="recipes.html">Recipes</a>
+  <a href="addfood.html">Add Food</a>
+  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="menu()">&#9776;</a>
+</div>
+
+
 <div id="myDIV" class="header">
   <h1>My Foods</h1>
   <form action="/action_page.php">
   <fieldset>
   <input type="text" id="myInput" placeholder="New Food...">
-  <input type = "date" id="date">
+  <input type="date" id="date">
   <br>
   <span onclick="newElement()" class="addBtn">Add</span>
 </fieldset>
@@ -17,6 +29,7 @@
 </div>
 <!-- need to add from scanning --!>
 
+<div id = "result"></div>
 <ul id="myUL">
 <!--
   <li>Hit the gym</li>
@@ -26,12 +39,14 @@
   <li>Read a book</li>
   <li>Organize office</li>
   --!> 
-  <button onclick="sortListDir()">Sort</button>
+
 </ul>
 
 
 
-  <script src = "main.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+</script>
+<script src = "main.js"></script>
 </body>
 
 </html>

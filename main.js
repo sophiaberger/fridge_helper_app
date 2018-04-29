@@ -50,6 +50,7 @@ for (i = 0; i < myNodelist.length; i++) {
 
 // Add a "checked" symbol when clicking on a list item
 var list = document.querySelector('ul');
+if (list != null){
 list.addEventListener('click', function(ev) {
   if (ev.target.tagName === 'LI') {
     ev.target.classList.toggle('checked');
@@ -57,11 +58,13 @@ list.addEventListener('click', function(ev) {
     
   }
 }, false);
+}
 
 
 
 
 var food;
+
 
 
 // Create a new list item when clicking on the "Add" button

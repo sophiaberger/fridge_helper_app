@@ -1,3 +1,9 @@
+
+function showDiv() {
+   document.getElementById("myDIV").style.display = "block";
+   document.getElementById("search").style.visibility = 'hidden';
+}
+
 var coll = document.getElementsByClassName("collapsible");
 var i;
 

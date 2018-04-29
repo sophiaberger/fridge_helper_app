@@ -1,52 +1,46 @@
-<link href="style.css" type="text/css" rel="stylesheet">
+<!doctype html>
 <html>
 <head>
+<title>To-Do List</title>
+  <meta charset="utf-8">
+  <script src="todo.js"></script>
 
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-
-
 <div class="topnav" id="myTopnav">
-  <a href="startpage.html">Fridge Helper<a>
-  <a href="profile.html">My Profile</a>
-  <a href="recipes.html">Recipes</a>
+  <a href="startpage.html" class="active">Fridge Helper</a>
+  <a href="recipes">Recipes</a>
   <a href="addfood.html">Add Food</a>
-  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="menu()">&#9776;</a>
+  <a href="profile">Profile</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
 </div>
 
-
-<div id="myDIV" class="header">
-  <h1>My Foods</h1>
-  <form action="/action_page.php">
+  
+  <h1>My To-Do List</h1>
+  <form>
   <fieldset>
-  <input type="text" id="myInput" placeholder="New Food...">
-  <input type="date" id="date">
-  <br>
-  <span onclick="newElement()" class="addBtn">Add</span>
-</fieldset>
-</form>
-</div>
-<!-- need to add from scanning --!>
-
-<div id = "result"></div>
-<ul id="myUL">
-<!--
-  <li>Hit the gym</li>
-  <li>Pay bills</li>
-  <li>Meet George</li>
-  <li>Buy eggs</li>
-  <li>Read a book</li>
-  <li>Organize office</li>
-  --!> 
-
-</ul>
-
-
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
-</script>
-<script src = "main.js"></script>
+    <legend>Add a New Food</legend>
+    <div class="tableContainer">
+      <div class="tableRow">
+        <label for="food">Food: </label>
+            <input type="text" id="food" size="35" placeholder="Enter Food">
+      </div>
+      <div class="tableRow">
+        <label for="expirDate">Expiration Date: </label>
+            <input type="date" id="expirDate">
+      </div>
+      <div class="tableRow">
+        <label for="submit"></label>
+        <input type="button" id="submit" value="submit">
+      </div>
+    </div>
+  </fieldset>
+  </form> 
+  
+  
+  <ul id="todoList">
+  </ul>     
 </body>
-
-</html>
+</html>   

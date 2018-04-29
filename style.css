@@ -119,6 +119,36 @@ ul li.checked::before {
     width: 7px;
 }
 
+
+ul#todoList {
+    list-style-type: none;
+    margin-left: 0px;
+    padding-left: 0px;
+}
+ul#todoList li {
+    position: relative;
+    padding: 5px;
+    margin: 5px;
+    background-color: #ededed;
+    border: 2px inset #ededed;
+}
+ul#todoList li span.notDone {
+    margin-right: 10px;
+    background-color: #FF9999;
+    cursor: pointer;
+}
+ul#todoList li span.done {
+    margin-right: 10px;
+    background-color: #80CC80;
+    cursor: pointer;
+}
+ul#todoList li span.delete {
+    display: inline-block;
+    position: absolute;
+    right: 5px;
+    cursor: pointer;
+}  
+
 /* Style the close button */
 .close {
     position: absolute;
@@ -205,8 +235,8 @@ body {
 }
 
 .active {
-  background-color: #f2f2f2;
-  color: white;
+  
+  color: black;
 }
 
 .topnav .icon {
@@ -219,6 +249,10 @@ body {
   	display: none;
   }
   
+  .topnav a:first-child:hover {
+  background-color: #24538f;
+  color: white;
+}
   .topnav a:first-child{
   padding: 2.8vh;
   }
@@ -228,6 +262,8 @@ body {
     padding: 3vh;
   }
 }
+
+
 
 @media screen and (max-width: 600px) {
   .topnav.responsive {position: relative;}

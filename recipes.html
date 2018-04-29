@@ -1,0 +1,103 @@
+<!-- Add icon library -->
+<!DOCTYPE html>
+<html>
+ <link href="recipe.css" type="text/css" rel="stylesheet">
+ 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <head>
+    <meta charset="UTF-8">
+    <title>title</title>
+  </head>
+  <body>
+
+<!--This part is the search option. I hard-coded random food items but we gotta make sure it's consistent with MyFoods -->
+<h1>Recipe Search</h1>
+
+<div id="search" style="display:block;">
+  <form>
+    <select name="myfoods" multiple>
+      <option value="food">Bananas</option>
+      <option value="food">Eggs</option>
+      <option value="food">Cheddar Cheese</option>
+      <option value="food">Wheat Bread</option>
+    </select>
+  </form>
+  <button onclick="showDiv()">Click Me</button>
+  <p>Hold down the Ctrl (windows) / Command (Mac) button to select multiple options</p>
+</div>
+
+<!--This part is the recipe generator -->
+<div id="myDIV" style="display:none;">
+<div class="collapsible">
+  <div class="clearfix float-my-children">
+   <img src="egg.jpg">
+   <div id=description>
+    <h3>Banana Bread</h3>
+    <span>Difficulty: Easy</span>
+    <span>Prep time: 10 minutes</span>
+    <span>Cook time: 55 minutes</span>
+    <span>Yield: Makes one loaf</span>
+
+    </div>
+</div>
+</div>
+
+<div class="content">
+  <p>Moist and delicious banana bread recipe. Easy to make, no need for a mixer! Ripe bananas, butter, sugar, egg, vanilla, baking soda, and flour.
+  <p>
+    INGREDIENTS
+2 to 3 very ripe bananas, peeled
+1/3 cup melted butter
+1 teaspoon baking soda
+Pinch of salt
+3/4 cup sugar
+1 large egg, beaten
+1 teaspoon vanilla extract
+1.5 cups of all-purpose flour
+</p>
+  <p>
+METHOD
+1 Preheat the oven to 350°F (175°C), and butter a 4x8-inch loaf pan.
+
+2 In a mixing bowl, mash the ripe bananas with a fork until completely smooth. Stir the melted butter into the mashed bananas.
+
+3 Mix in the baking soda and salt. Stir in the sugar, beaten egg, and vanilla extract. Mix in the flour.
+
+4 Pour the batter into your prepared loaf pan. Bake for 50 minutes to 1 hour at 350°F (175°C), or until a tester inserted into the center comes out clean.
+
+5 Remove from oven and let cool in the pan for a few minutes. Then remove the banana bread from the pan and let cool completely before serving. Slice and serve. (A bread knife helps to make slices that aren't crumbly.)
+  </p>
+</div>
+
+<div class="collapsible">
+  <article>
+    <img src="https://www.simplyrecipes.com/recipes/eggs_benedict/" alt="Sample photo">
+    <div class="text">
+      <h3>Dynamically innovate supply chains</h3>
+      <p>Holisticly predominate extensible testing procedures for reliable supply chains.</p>
+      <button>Here's why</button>
+    </div>
+  </article>
+</div><div class="content">
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
+<div class="collapsible">
+  <article>
+    <img src="https://www.simplyrecipes.com/recipes/eggs_benedict/" alt="Sample photo">
+    <div class="text">
+      <h3>Dynamically innovate supply chains</h3>
+      <p>Holisticly predominate extensible testing procedures for reliable supply chains.</p>
+      <button>Here's why</button>
+    </div>
+  </article>
+</div><div class="content">
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
+
+</div>
+
+  </body>
+  <script src = "recipe.js"></script>
+
+
+</html>

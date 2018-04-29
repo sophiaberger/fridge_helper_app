@@ -185,7 +185,8 @@ input {
 }
 
 /* Style the "Add" button */
-.button {
+.button, .michelleButton {
+	position: center;
 	border: .25vh solid;
     padding: 10px;
     width: 150px;
@@ -201,7 +202,7 @@ input {
     margin-top: 10px;
 }
 
-.button:hover {
+.button:hover, .michelleButton:hover {
     background-color: #bbb;
 }
 
@@ -317,7 +318,13 @@ ul#todoList li span.delete {
 	}
 
   .button {
+  position: center;
   width: 100px;
+  }
+  
+  .michelleButton {
+  position: center;
+  width: 200px;
   }
    .topnav.responsive {position: relative;}
   .topnav.responsive .icon {
@@ -390,7 +397,10 @@ img {
 }
 input[type=file]{
 padding:10px;
-background:#2d2d2d;}
+background-color: #24538f;
+text-align: center;
+
+}
 
 
 
@@ -411,6 +421,8 @@ background:#2d2d2d;}
 
 .active:after {
 }
+
+
 
 .content {
     padding: 0 18px;

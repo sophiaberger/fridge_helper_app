@@ -120,34 +120,7 @@ ul li.checked::before {
 }
 
 
-ul#todoList {
-    list-style-type: none;
-    margin-left: 0px;
-    padding-left: 0px;
-}
-ul#todoList li {
-    position: relative;
-    padding: 5px;
-    margin: 5px;
-    background-color: #ededed;
-    border: 2px inset #ededed;
-}
-ul#todoList li span.notDone {
-    margin-right: 10px;
-    background-color: #FF9999;
-    cursor: pointer;
-}
-ul#todoList li span.done {
-    margin-right: 10px;
-    background-color: #80CC80;
-    cursor: pointer;
-}
-ul#todoList li span.delete {
-    display: inline-block;
-    position: absolute;
-    right: 5px;
-    cursor: pointer;
-}  
+ 
 
 /* Style the close button */
 .close {
@@ -188,10 +161,10 @@ input {
 }
 
 /* Style the "Add" button */
-.addBtn {
+.button {
 	border: .25vh solid;
     padding: 10px;
-    width: 10vw;
+    width: 150px;
     background: #d9d9d9;
     color: #555;
     font-family: 'verdana';
@@ -204,7 +177,7 @@ input {
     margin-top: 10px;
 }
 
-.addBtn:hover {
+.button:hover {
     background-color: #bbb;
 }
 
@@ -244,6 +217,37 @@ body {
  
 }
 
+
+ul#todoList {
+    list-style-type: none;
+    margin-left: 0px;
+    padding-left: 0px;
+}
+ul#todoList li {
+    position: relative;
+    
+    padding: 5px;
+    margin: 5px;
+    background-color: #ededed;
+    border: 2px inset #ededed;
+}
+ul#todoList li span.notDone {
+    margin-right: 10px;
+    
+    cursor: pointer;
+}
+ul#todoList li span.done {
+    margin-right: 10px;
+    
+    cursor: pointer;
+}
+ul#todoList li span.delete {
+    display: inline-block;
+    position: absolute;
+    right: 5px;
+    cursor: pointer;
+} 
+
 @media screen and (max-width: 600px) {
   .topnav a:not(:first-child) {
   	display: none;
@@ -261,12 +265,16 @@ body {
     display: block;
     padding: 3vh;
   }
-}
-
-
-
-@media screen and (max-width: 600px) {
-  .topnav.responsive {position: relative;}
+  
+  ul#todoList li {
+  font-size: 15px;
+  }
+  
+  
+  .button {
+  width: 100px;
+  }
+   .topnav.responsive {position: relative;}
   .topnav.responsive .icon {
     position: absolute;
     right: 0;
@@ -278,3 +286,5 @@ body {
     text-align: left;
   }
 }
+
+

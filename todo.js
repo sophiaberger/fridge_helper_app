@@ -248,12 +248,13 @@ function deleteItem(e) {
 
    
     var span = e.target;
-    var id = span.parentElement.id;
+    console.log("target" + e.target);
+    var id = span.id;
     console.log("delete an item: " + id);
 
     // find and remove the item in localStorage
     var key = "todo" + id;
-    localStorage.removeItem('key');
+    localStorage.removeItem(key);
 
     // find and remove the item in the array
     for (var i = 0; i < todos.length; i++) { //loop through looking for matching id

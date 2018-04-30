@@ -149,7 +149,7 @@ function addTodoToPage(todoItem) {
     var markExpired = false;
     var itemDate = new Date(todoItem.expirDate);
     var itemExpires = itemDate.getTime();
-    if (itemExpires - currentTime >= 864000){
+     if ((itemExpires - currentTime >= 864000) && (itemExpires - currentTime < 1728000000)){
     markRed = true;
     }
     if (currentTime - itemExpires >= 0){
@@ -221,7 +221,7 @@ function createNewTodo(todoItem) {
     var markExpired = false;
     var itemDate = new Date(todoItem.expirDate);
     var itemExpires = itemDate.getTime();
-    if (itemExpires - currentTime >= 864000){
+    if ((itemExpires - currentTime >= 864000) && (itemExpires - currentTime < 1728000000)){
     markRed = true;
     }
     if (currentTime - itemExpires >= 0){

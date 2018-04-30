@@ -40,15 +40,21 @@
 </div>
 
 <div id="allergy"> 
-<h3>Intolerances</h3>
-
-<div class="container">
-	<form id = "allergies">
-		<input type="checkbox"><span>Lactose</span>
-		<input type="checkbox"><span>Gluten</span>
-		<input type="checkbox"><span>Tree Nuts</span>
-		<input type="checkbox"><span>Peanuts</span>
-		<input type="checkbox"><span>Shellfish</span>	
+	<h3>Intolerances</h3>
+	<div class="container">
+		<form id = "allergies">
+			<!--
+			<input type="checkbox"><span>Lactose</span>
+			<input type="checkbox"><span>Gluten</span>
+			<input type="checkbox"><span>Tree Nuts</span>
+			<input type="checkbox"><span>Peanuts</span>
+			<input type="checkbox"><span>Shellfish</span>
+			!-->	
+			<input type="radio" name="diet" value="veg" checked> Lactose<br>
+  			<input type="radio" name="diet" value="vegan"> Gluten<br>
+  			<input type="radio" name="diet" value="pesc"> Tree Nuts<br>  
+  			<input type="radio" name="diet" value="paleo"> Peanuts<br>  
+  			<input type="radio" name="diet" value="none"> Shellfish  
 	</form>		
 </div>
 </div>

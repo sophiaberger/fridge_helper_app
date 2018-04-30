@@ -13,21 +13,18 @@ div {
 
 #diettype, #allergy {
 font-family: 'futura';
-	text-align: center;
-	position: center;
 	
-	margin: auto;
-	width: 50vw;
 	
 }
 
-container {
-position: relative;
-}
+
 
 
 form {
 border: 0px;
+position: center;
+width: 80vw;
+margin: auto;
 }
 
 fieldset {
@@ -48,36 +45,37 @@ font-family: 'futura';
     width: 80vw;
 }
 
-h1 {
+h1, h2, h3 {
 	font-family: 'futura';
 	text-align: center;
 	display: block;
 	margin-left: auto;
     margin-right: auto;
-    width: 40vw;
+   
 	
 	color: white;
 	background-color: #24538f; /* same as menu color */
 }
 
+h1 {
+width: 500px;
+}
+
+h3 {
+width: 370px;
+}
+
 /* styling for profile.html */
 
-#diettype {
-	position: center;
-	width: 60vw;
-}
 
-container {
-position: relative;
-width: 50vw;
-margin-left: 20vw;
-}
 
-#diet_choices {
-   
+
+
+#diet_choices, #allergies {
+   position: center;
     width: 4vw;
     
-   
+   margin-left: 20vw;
     white-space: nowrap;
 }
 .container {
@@ -218,14 +216,15 @@ body {
 
 .topnav {
   overflow: hidden;
-  background-color: #24538f;
+   background-color: #24538f;
+  color: white;
   
 }
 
 .topnav a {
   float: left;
-  
-  color: #f2f2f2;
+  background-color: #24538f;
+  color: white;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -238,7 +237,8 @@ body {
 }
 
 .active {
-  color: black;
+   background-color: #24538f;
+  color: white;
 }
 
 .topnav .icon {
@@ -311,11 +311,16 @@ ul#todoList li span.delete {
 	float: right;
 	margin-right: 19vw;
 	}
-  .container {
+  container {
     width: 4vw;
     
 	}
-
+	h1 {
+	width: 160px;
+	}
+	h3 {
+	width: 270px;
+	}
 	#allergy, #diettype {
 	margin: auto;
 	width: 100vw;
@@ -438,6 +443,52 @@ text-align: center;
     width: 95%;
     margin: 10px;
     margin-left: 15px;
+}
+/*dropdown code */
+.dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
 }
 
 

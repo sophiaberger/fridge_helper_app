@@ -231,6 +231,10 @@ body {
   font-size: 17px;
 }
 
+expiring {
+
+}
+
 .topnav a:hover {
   background-color: #d3e2f1;
   color: #24538f;

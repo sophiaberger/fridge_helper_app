@@ -25,7 +25,7 @@ function init(){
 		});
 	getTodoItems();
 	}
-	else if (allergies != null){
+	else if (addButton == null && allergies != null){
 	getTodoItems();
 	}
 	/*getTodoData();*/
@@ -142,9 +142,29 @@ function addTodoToPage(todoItem) {
     var ul = document.getElementById("todoList");
     var li = document.createElement("li");
     var spanTodo = document.createElement("span");
-     spanTodo.innerHTML =
-        todoItem.food + ": Expires on " + todoItem.expirDate;  
+    var theDate = new Date();
+    var currentTime = theDate.getTime();
+    var str = "";
+    var markRed = false;
+    var itemDate = new Date(todoItem.expirDate);
+    var itemExpires = itemDate.getTime();
+    if (itemExpires - currentTime >= 864000){
+    markRed = true;
+    }
+   
+
+    str +=  todoItem.food + ":";
+    if (markRed){
+    str += '<expiring style = "color:red">';
+    }
+    else {
+    str += '<expiring>';
+    }
+     str +=  " Expire on " + todoItem.expirDate;
+     str += '</expiring>';
+    spanTodo.innerHTML = str;
         
+  
     var spanDone = document.createElement("span");
     if (!todoItem.done) {
         spanDone.setAttribute("class", "notDone");
@@ -183,8 +203,28 @@ function addTodoToPage(todoItem) {
 function createNewTodo(todoItem) {
     var li = document.createElement("li");
     var spanTodo = document.createElement("span");
-    spanTodo.innerHTML =
-        todoItem.food + ": Expires on " + todoItem.expirDate;
+    var theDate = new Date();
+    var currentTime = theDate.getTime();
+    var str = "";
+    var markRed = false;
+    var itemDate = new Date(todoItem.expirDate);
+    var itemExpires = itemDate.getTime();
+    if (itemExpires - currentTime >= 864000){
+    markRed = true;
+    }
+   
+
+    str +=  todoItem.food + ":";
+    if (markRed){
+    str += '<expiring style = "color:red">';
+    }
+    else {
+    str += '<expiring>';
+    }
+     str +=  " Expire on " + todoItem.expirDate;
+     str += '</expiring>';
+    spanTodo.innerHTML = str;
+        
 
     var spanDone = document.createElement("span");
     if (!todoItem.done) {

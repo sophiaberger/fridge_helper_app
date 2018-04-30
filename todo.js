@@ -15,6 +15,14 @@ function init(){
 	var allergies = document.getElementById("allergies");
 	if (addButton != null){
 	addButton.onclick = getFormData;
+	todos.sort(function(a,b){
+		var c = new Date(a.expirDate);
+		var d = new Date(b.expirDate);
+		var cTime = c.getTime();
+		var dTime = d.getTime();
+		return cTime - dTime;
+		
+		});
 	getTodoItems();
 	}
 	else if (allergies != null){
@@ -84,6 +92,14 @@ function parseTodoItems(todoJSON){
         var todoItem = todoArray[i];
         todos.push(todoItem);
     	}
+    todos.sort(function(a,b){
+		var c = new Date(a.expirDate);
+		var d = new Date(b.expirDate);
+		var cTime = c.getTime();
+		var dTime = d.getTime();
+		return cTime - dTime;
+		
+		});
 	}
 	
 
@@ -110,6 +126,14 @@ function addTodosToPage(){
         
     	}
     ul.appendChild(listFragment);
+    todos.sort(function(a,b){
+		var c = new Date(a.expirDate);
+		var d = new Date(b.expirDate);
+		var cTime = c.getTime();
+		var dTime = d.getTime();
+		return cTime - dTime;
+		
+		});
 	}
 	
 
@@ -143,6 +167,16 @@ function addTodoToPage(todoItem) {
     li.appendChild(spanDelete);
     
     ul.appendChild(li);
+    
+    todos.sort(function(a,b){
+		var c = new Date(a.expirDate);
+		var d = new Date(b.expirDate);
+		var cTime = c.getTime();
+		var dTime = d.getTime();
+		return cTime - dTime;
+		
+		});
+    
     
 }
 
@@ -202,8 +236,19 @@ function getFormData() {
     var id = (new Date()).getTime();
     var todoItem = new Todo(id, food, expirDate);
     todos.push(todoItem);
+    
+    todos.sort(function(a,b){
+		var c = new Date(a.expirDate);
+		var d = new Date(b.expirDate);
+		var cTime = c.getTime();
+		var dTime = d.getTime();
+		return cTime - dTime;
+		
+		});
+    
     addTodoToPage(todoItem);
     saveTodoItem(todoItem);
+    
 }
 
 function checkInputText(value, msg) {
@@ -216,6 +261,16 @@ function checkInputText(value, msg) {
 
 function saveTodoItem(todoItem) {
     if (localStorage) { //if localStorage exists
+    
+    	todos.sort(function(a,b){
+		var c = new Date(a.expirDate);
+		var d = new Date(b.expirDate);
+		var cTime = c.getTime();
+		var dTime = d.getTime();
+		return cTime - dTime;
+		
+		});
+		
         var key = "todo" + todoItem.id; //create key 
         var item = JSON.stringify(todoItem); //convert to string
         localStorage.setItem(key, item); //add to localStorage

@@ -146,10 +146,14 @@ function addTodoToPage(todoItem) {
     var currentTime = theDate.getTime();
     var str = "";
     var markRed = false;
+    var markExpired = false;
     var itemDate = new Date(todoItem.expirDate);
     var itemExpires = itemDate.getTime();
     if (itemExpires - currentTime >= 864000){
     markRed = true;
+    }
+    if (currentTime - itemExpires >= 0){
+    markExpired = true;
     }
    
 
@@ -160,7 +164,15 @@ function addTodoToPage(todoItem) {
     else {
     str += '<expiring>';
     }
+    if (markExpired){
+    str += '<expiring2 style = "color:#8B0000">';
+    str += ' THIS FOOD HAS EXPIRED';
+    }
+    else {
+     str += '<expiring2>';
      str +=  " Expire on " + todoItem.expirDate;
+     }
+     str += '</expiring2>';
      str += '</expiring>';
     spanTodo.innerHTML = str;
         
@@ -185,7 +197,6 @@ function addTodoToPage(todoItem) {
     //li.appendChild(spanDone);    
     li.appendChild(spanTodo);
     li.appendChild(spanDelete);
-    
     ul.appendChild(li);
     
     todos.sort(function(a,b){
@@ -207,10 +218,14 @@ function createNewTodo(todoItem) {
     var currentTime = theDate.getTime();
     var str = "";
     var markRed = false;
+    var markExpired = false;
     var itemDate = new Date(todoItem.expirDate);
     var itemExpires = itemDate.getTime();
     if (itemExpires - currentTime >= 864000){
     markRed = true;
+    }
+    if (currentTime - itemExpires >= 0){
+    markExpired = true;
     }
    
 
@@ -221,7 +236,15 @@ function createNewTodo(todoItem) {
     else {
     str += '<expiring>';
     }
+    if (markExpired){
+    str += '<expiring2 style = "color:#8B0000">';
+    str += ' THIS FOOD HAS EXPIRED';
+    }
+    else {
+     str += '<expiring2>';
      str +=  " Expire on " + todoItem.expirDate;
+     }
+     str += '</expiring2>';
      str += '</expiring>';
     spanTodo.innerHTML = str;
         

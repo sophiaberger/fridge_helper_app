@@ -68,12 +68,13 @@ h1 {
 }
 
 container {
-position
+position: relative;
+width: 50vw;
+margin-left: 20vw;
 }
 
 #diet_choices {
-    margin-left: 20vw;
-    margin-right: 20vw;
+   
     width: 4vw;
     
    
@@ -81,11 +82,15 @@ position
 }
 .container {
     width: 4vw;
-    
+    position: center;
+
+margin-left: 20vw;
 }
 
 
 #allergy {
+position: center;
+width: 100vw;
 	white-space: nowrap;
 }
 

@@ -160,7 +160,7 @@ function createNewTodo(todoItem) {
     spanDelete.innerHTML = "&nbsp;&#215;&nbsp;";
 
     spanDelete.onclick = deleteItem;
-    spanDone.onclick = markItemDone;
+    
 
 
     
@@ -233,29 +233,7 @@ list.addEventListener('click', function(ev) {
 */
 
 
-function markItemDone(e){
-	var span = e.target;
-    var id = span.parentElement.id;
-    console.log("mark an item done: " + id);
-    var key = "todo" + id;
-    // find and remove the item in the array
-    for (var i = 0; i < todos.length; i++) { //loop through looking for matching id
-        if (todos[i].id == id) { //if we find that id
-             //mark as done
-            
-            var newItem = new Todo(todo[i].id, todo[i].food, todo[i].expirDate);
-            newItem.done = true;
-            
-            break;
-        }
-    }
-    todos.push(newItem);
-    addTodoToPage(newItem);
-    saveTodoItem(newItem);
-    
-   
-    
-}
+
 
 
 function deleteItem(e) {
@@ -267,7 +245,7 @@ function deleteItem(e) {
 
     // find and remove the item in localStorage
     var key = "todo" + id;
-    localStorage.removeItem(key);
+    localStorage.removeItem('key');
 
     // find and remove the item in the array
     for (var i = 0; i < todos.length; i++) { //loop through looking for matching id

@@ -8,14 +8,7 @@ function updateOutput() {
       var v = [];
       
       if (localStorage.food) {
-        v = JSON.parse(localStorage.food);
-    } else {
-      localStorage.food = JSON.stringify(v);
-    }
-    // Output list
-    var str = "";
-    
-    for (var i = 0; i < localStorage.length; i++){ //loop
+        for (var i = 0; i < localStorage.length; i++){ //loop
 		var key = localStorage.key(i);
 		if (key.substring(0,4) == "todo"){ //only add items with string "food" in key
 			var item = localStorage.getItem(key);
@@ -23,6 +16,14 @@ function updateOutput() {
 			v.push(todoItem);
 			}
 		}
+		localStorage.food = JSON.stringify(v);
+    } else {
+      v = JSON.parse(localStorage).food;
+    }
+    // Output list
+    var str = "";
+    
+    
     for (var i = 0; i < v.length; i++) {
 			str += '<option value = "food">';
 			str += v[i].food;

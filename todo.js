@@ -55,6 +55,14 @@ function getTodoItems(){
 			}
 		
 		}
+		todos.sort(function(a,b){
+		var c = new Date(a.expirDate);
+		var d = new Date(b.expirDate);
+		var cTime = c.getTime();
+		var dTime = d.getTime();
+		return cTime - dTime;
+		
+		});
 		addTodosToPage();
 	}
 	else {
@@ -130,7 +138,7 @@ function addTodoToPage(todoItem) {
 
     spanDelete.onclick = deleteItem;
     
-    li.appendChild(spanDone);    
+    //li.appendChild(spanDone);    
     li.appendChild(spanTodo);
     li.appendChild(spanDelete);
     
@@ -164,7 +172,7 @@ function createNewTodo(todoItem) {
 
 
     
-    li.appendChild(spanDone);
+    //li.appendChild(spanDone);
     li.appendChild(spanTodo);
     li.appendChild(spanDelete);
     

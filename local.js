@@ -16,10 +16,8 @@ function updateOutput() {
 			v.push(todoItem);
 			}
 		}
-	localStorage.food = JSON.stringify(v);
-		
+		localStorage.food = JSON.stringify(v);
     } else {
-      
       v = JSON.parse(localStorage).food;
     }
     // Output list

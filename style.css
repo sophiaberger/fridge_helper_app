@@ -288,7 +288,7 @@ ul#todoList li span.delete {
 	margin-right: 20vw;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 375px) {
   .topnav a:not(:first-child) {
   	display: none;
   }

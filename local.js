@@ -2,7 +2,7 @@ $("document").ready(function(f){
 	console.log("loaded.");
 	updateOutput();
 });
-
+//done!
 function updateOutput() {
     // loads v from localStorage
       var v = [];

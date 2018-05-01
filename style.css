@@ -292,7 +292,7 @@ ul#todoList li span.delete {
   .topnav a:not(:first-child) {
   	display: none;
   }
-  
+  <!--  -->
   .topnav a:first-child:hover {
   background-color: #24538f;
   color: white;

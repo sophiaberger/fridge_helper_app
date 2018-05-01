@@ -1,0 +1,155 @@
+<!-- Add icon library -->
+<!DOCTYPE html>
+<html>
+ 
+  <link href="style.css" type="text/css" rel="stylesheet">
+  
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <head>
+    <meta charset="UTF-8">
+    <title>Recipes</title>
+  </head>
+  <body>
+
+<div class="topnav" id="myTopnav">
+  <a href="startpage.html" class="active">Fridge Helper</a>
+  <a href="myfood.html">My Foods</a>
+  <a href="addfood.html">Add Food</a>
+  <a href="profile.html">Profile</a>
+  <a href="startpage.html">Log Out</a>
+  
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+</div>
+
+<!--This part is the search option. I hard-coded random food items but we gotta make sure it's consistent with MyFoods -->
+<h1>Recipe Search</h1>
+
+<div id="search" style="display:block;">
+  <form>
+    <select id="myFoodList" multiple>
+	<!--
+      <option value="food">Bananas</option>
+      <option value="food">Eggs</option>
+      <option value="food">Cheddar Cheese</option>
+      <option value="food">Wheat Bread</option>
+--!>
+    </select>
+  </form>
+  <button class = "button" onclick="showDiv()">Click Me</button>
+  <p>Hold down the Ctrl (windows) / Command (Mac) button to select multiple options</p>
+</div>
+
+<!--This part is the recipe generator -->
+<div id="myDIV" style="display:none;">
+<div class="collapsible">
+  <div class="clearfix float-my-children">
+   <img src="images/bananasandbread.jpg">
+   <div id=description>
+    <h3>Banana Bread</h3>
+    <span>Difficulty: Hard</span>
+    <span>Prep time: 10 minutes</span>
+    <span>Cook time: 55 minutes</span>
+    <span>Yield: Makes one loaf</span>
+
+    </div>
+</div>
+</div>
+
+<div class="content">
+  <p>Moist and delicious banana bread recipe. Easy to make, no need for a mixer! Ripe bananas, butter, sugar, egg, vanilla, baking soda, and flour.
+  <p>
+    INGREDIENTS:
+2 to 3 very ripe bananas, peeled
+1/3 cup melted butter
+1 teaspoon baking soda
+3/4 cup sugar
+1 large egg, beaten
+1 teaspoon vanilla extract
+1.5 cups of all-purpose flour
+</p>
+  <p>
+METHOD
+1 Preheat the oven to 350°F (175°C), and butter a 4x8-inch loaf pan.
+
+2 In a mixing bowl, mash the ripe bananas with a fork until completely smooth. Stir the melted butter into the mashed bananas.
+
+3 Mix in the baking soda and salt. Stir in the sugar, beaten egg, and vanilla extract. Mix in the flour.
+
+4 Pour the batter into your prepared loaf pan. Bake for 50 minutes to 1 hour at 350°F (175°C), or until a tester inserted into the center comes out clean.
+
+5 Remove from oven and let cool in the pan for a few minutes. Then remove the banana bread from the pan and let cool completely before serving. Slice and serve. (A bread knife helps to make slices that aren't crumbly.)
+  </p>
+</div>
+
+<div class="collapsible">
+  <div class="clearfix float-my-children">
+   <img src="images/sandwich.jpg">
+   <div id=description>
+    <h3>Egg Sandwich</h3>
+    <span>Difficulty: Easy</span>
+    <span>Prep time: 0 minutes</span>
+    <span>Cook time: 20 minutes</span>
+    <span>Yield: 4-6 serving</span>
+
+    </div>
+</div>
+</div>
+
+<div class="content">
+<p>
+    INGREDIENTS:
+1 tablespoon ketchup
+1/2 teaspoon chipotle in adobo sauce
+2 slices bread
+2 slices Cheddar
+1 tablespoon unsalted butter
+1 slice bacon, halved 
+1 egg
+</p>
+  <p>
+METHOD
+1. Toast bread and cook egg
+2. Spread butter 
+3. Put tablespoon of butter or oil in pan over Medium heat.
+4. Pour egg/cheese mixture into pan. Stir constantly with spatula until done.
+  </p>
+</div>
+<div class="collapsible">
+  <div class="clearfix float-my-children">
+   <img src="images/scrambled_eggs.jpg">
+   <div id=description>
+    <h3>Cheesy Scrambled Eggs</h3>
+    <span>Difficulty: Easy</span>
+    <span>Prep time: 5 minutes</span>
+    <span>Cook time: 12 minutes</span>
+    <span>Yield: 4-6 servings</span>
+
+    </div>
+</div>
+</div>
+
+<div class="content">
+<p>
+    INGREDIENTS:
+3 tablespoons butter
+12 eggs
+Salt and freshly ground black pepper
+3/4 cup shredded Cheddar-Monterey Jack cheese blend
+</p>
+  <p>
+METHOD
+1. Crack 3 eggs into a bowl. Beat with fork. Add a splash of water. 2. Stir in desired amount of cheese. Add a dash of pepper and 1/2 tsp of salt.
+3. Put tablespoon of butter or oil in pan over Medium heat.
+4. Pour egg/cheese mixture into pan. Stir constantly with spatula until done.
+  </p>
+</div>
+
+</div>
+
+  </body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+ <script src = "recipe.js"></script>
+  <script src = "todo.js"></script>
+	<script src = "local.js"></script>
+
+</html>

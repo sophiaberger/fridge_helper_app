@@ -8,19 +8,11 @@
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-<div class="topnav" id="myTopnav">
-  <a href="startpage.html" class="active">Fridge Helper</a>
-  <a href="recipes.html">Recipes</a>
-  <a href="addfood.html">Add Food</a>
-  <a href="profile.html">Profile</a>
-  <a href="startpage.html" >Log Out</a>
-  <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
-</div>
+  
   <h1>My To-Do List</h1>
   <form>
   <fieldset>
-    
+    <legend>Add a New Food</legend>
     <div class="tableContainer">
       <div class="tableRow">
         <label for="food">Food: </label>
@@ -32,12 +24,14 @@
       </div>
       <div class="tableRow">
         <label for="submit"></label>
-        <input type="button" class = "button" id="submit" value="Add Food">
+        <input type="button" id="submit" value="submit">
       </div>
     </div>
   </fieldset>
-  </form>   
-<ul id="todoList">
-</ul>     
+  </form> 
+  
+  
+  <ul id="todoList">
+  </ul>     
 </body>
 </html>   

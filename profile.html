@@ -1,0 +1,76 @@
+<!-- Add icon library -->
+<!DOCTYPE html>
+<html>
+ <link href="style.css" type="text/css" rel="stylesheet">
+ 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <head>
+    <meta charset="UTF-8">
+    <title>My Profile</title>
+      <script src = "todo.js"></script>
+  </head>
+  <body>
+<div class="topnav" id="myTopnav">
+  <a href="startpage.html" class="active">Fridge Helper</a>
+  <a href="myfood.html">My Foods</a>
+  <a href="addfood.html">Add Food</a>
+  <a href="recipes.html">Recipes</a>
+  <a href="startpage.html" >Log Out</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;
+  </a>
+</div>
+
+
+<div class="profile" class="header">
+	<h1>John Doe</h1>
+	<p>Your average dude who likes to eat food.</p>
+	<img src = "person.jpeg" style="width:100px;height:100px;">
+</div>
+
+<div id="diettype"> 
+	<h3>Diet Type</h3>
+	<div class="container">
+		<form id = "diet_choices">
+  			<input type="radio" name="diet" value="veg" checked> Vegetarian<br>
+  			<input type="radio" name="diet" value="vegan"> Vegan<br>
+  			<input type="radio" name="diet" value="pesc"> Pescetarian<br>  
+  			<input type="radio" name="diet" value="paleo"> Paleo<br>  
+  			<input type="radio" name="diet" value="none"> None  
+		</form> 
+	</div>
+</div>
+
+<div id="allergy"> 
+	<h3>Intolerances</h3>
+	<div class="container">
+		<form id = "allergies">
+			<!--
+			<input type="checkbox"><span>Lactose</span>
+			<input type="checkbox"><span>Gluten</span>
+			<input type="checkbox"><span>Tree Nuts</span>
+			<input type="checkbox"><span>Peanuts</span>
+			<input type="checkbox"><span>Shellfish</span>
+			!-->	
+			<input type="radio" name="diet" value="veg" checked> Lactose<br>
+  			<input type="radio" name="diet" value="vegan"> Gluten<br>
+  			<input type="radio" name="diet" value="pesc"> Tree Nuts<br>  
+  			<input type="radio" name="diet" value="paleo"> Peanuts<br>  
+  			<input type="radio" name="diet" value="none"> Shellfish  
+	</form>		
+</div>
+</div>
+
+<div>
+<br>
+Recently Added Foods
+<br>
+
+<br>
+</div>
+<ul id="todoList">
+</ul> 
+
+  
+
+  </body>
+</html>

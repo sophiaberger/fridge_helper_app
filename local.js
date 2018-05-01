@@ -16,9 +16,11 @@ function updateOutput() {
 			v.push(todoItem);
 			}
 		}
+		//v = JSON.parse(localStorage).food;
 		localStorage.food = JSON.stringify(v);
     } else {
       v = JSON.parse(localStorage).food;
+      //localStorage.food = JSON.stringify(v);
     }
     // Output list
     var str = "";

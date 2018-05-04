@@ -1,7 +1,14 @@
-$("document").ready(function(f){
+/*$("document").ready(function(f){
 	console.log("loaded.");
 	updateOutput();
 });
+
+*/
+window.onload = init;
+
+function init() {
+updateOutput();
+}
 //done!
 function updateOutput() {
     // loads v from localStorage
